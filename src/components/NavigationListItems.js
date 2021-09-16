@@ -10,7 +10,7 @@ const NavigationListItems = ({ sx }) => {
       }}
     >
       <ListItem>
-        <Link href="/#home">Home</Link>
+        <Link href="/">Home</Link>
       </ListItem>
 
       <ListItem>

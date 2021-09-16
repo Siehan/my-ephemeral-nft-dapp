@@ -1,14 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-new-object */
-import * as React from "react";
-
 import { pinJSONToIPFS } from "./pinata.js";
 require("dotenv").config();
 const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY;
-const contractABI = require("../contract-abi.json");
-const contractAddress = "0xba831b4dea469f59e430f65b09aaf6df9d4b649a";
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey);
+const contractABI = require("../contract-abi.json");
+const contractAddress = "0xba831b4dea469f59e430f65b09aaf6df9d4b649a";
 
 export const connectWallet = async () => {
   if (window.ethereum) {
@@ -98,6 +96,7 @@ export const mintNFT = async (url, name, description) => {
       status: "❗Please make sure all fields are completed before minting.",
     };
   }
+
   //make metadata
   const metadata = new Object();
   metadata.name = name;
@@ -115,8 +114,7 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl;
 
   //load smart contract
-
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress);
+  window.contract = await new web3.eth.Contract(contractABI, contractAddress); //loadContract();
 
   //set up your Ethereum transaction
   const transactionParameters = {
@@ -126,7 +124,6 @@ export const mintNFT = async (url, name, description) => {
   };
 
   //sign the transaction via Metamask
-
   try {
     const txHash = await window.ethereum.request({
       method: "eth_sendTransaction",

@@ -1,13 +1,14 @@
-import "../index.css";
+import "./index.css";
+import { FormControl, Input, FormLabel } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { Box, Button, Container, Heading, Image, Text } from "@chakra-ui/react";
-import { FormControl, Input, FormLabel } from "@chakra-ui/react";
-import { connectWallet, getCurrentWalletConnected, mintNFT } from "../util/interact.js";
-import wallet from "../images/wallet.png";
-import Navigation from "./Navigation";
-import SlideFadeOnScroll from "./SlideFadeOnScroll";
 
-const CreateYourNFT = () => {
+import { connectWallet, getCurrentWalletConnected, mintNFT } from "./util/interact.js";
+import wallet from "./images/wallet.png";
+import Navigation from "./components/Navigation";
+import SlideFadeOnScroll from "./components/SlideFadeOnScroll";
+
+const CreateYourNFT = (props) => {
   //State variables
   const [walletAddress, setWallet] = useState("");
   const [status, setStatus] = useState("");
