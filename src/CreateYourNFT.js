@@ -150,7 +150,7 @@ const CreateYourNFT = (props) => {
                         <Input
                           fontSize={20}
                           type="text"
-                          placeholder="e.g. Create your NFT!"
+                          placeholder="e.g. The name you would like to give to your NFT"
                           onChange={(event) => setName(event.target.value)}
                         />
                       </FormControl>
@@ -165,7 +165,7 @@ const CreateYourNFT = (props) => {
                           id="description"
                           fontSize={20}
                           type="text"
-                          placeholder="e.g. This is your favorite picture ;)"
+                          placeholder="e.g. A little description of your photograph ;-)"
                           onChange={(event) => setDescription(event.target.value)}
                         />
                       </FormControl>
