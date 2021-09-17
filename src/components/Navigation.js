@@ -37,7 +37,7 @@ const Navigation = () => {
           <Avatar
             marginX="4"
             size="md"
-            name="The ephemeral photo gallery"
+            name="The ephemeral NFTs gallery"
             img
             src={logo_navigation}
             alt="logo_navigation"
@@ -45,7 +45,7 @@ const Navigation = () => {
         </WrapItem>
       </Wrap>
       <Link href="/" fontWeight="bold" fontSize={20} mr="auto">
-        The ephemeral photo gallery
+        The ephemeral NFTs gallery
       </Link>
       {isMobile ? (
         <MobileNavigation>

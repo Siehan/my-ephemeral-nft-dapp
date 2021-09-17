@@ -27,7 +27,7 @@ const Header = () => {
               >
                 Welcome to{" "}
                 <Text as="span" color={"teal.500"} fontSize={40} fontWeight="bold">
-                  The ephemeral NFT gallery
+                  The ephemeral NFTs gallery
                 </Text>{" "}
               </Heading>
               <Text fontSize={28} mb={6} py={8}>
