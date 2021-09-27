@@ -22,7 +22,7 @@ const NavigationListItems = ({ sx }) => {
       </ListItem>
 
       <ListItem>
-        <Link href="/#gallery-nft">Gallery NFTs </Link>
+        <Link href="/#nfts-gallery">NFTs Gallery</Link>
       </ListItem>
 
       <ListItem>

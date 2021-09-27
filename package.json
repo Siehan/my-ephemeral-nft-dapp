@@ -1,6 +1,9 @@
 {
   "name": "my-ephemeral-nft-dapp",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x"
+  },
   "private": true,
   "dependencies": {
     "@alch/alchemy-web3": "^1.1.4",
@@ -19,6 +22,7 @@
     "install": "^0.13.0",
     "node-fetch": "^3.0.0",
     "npm": "^7.23.0",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
